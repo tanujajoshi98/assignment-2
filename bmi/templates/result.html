@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block  content%}
+
+BMI is  :{{result}}<br>
+
+{%if result < 18.5%}
+And you are UNDERWEIGHT.
+
+{%elif result >= 18.5 and result < 24.9%}
+And u are Normal weight
+
+{%elif result >= 25 and result < 29.9%}
+And you are OVERWEIGHT
+
+{%else%}
+And you are OBESE
+
+
+{% endif %}
+
+
+
+
+
+{% endblock  %}
